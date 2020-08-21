@@ -74,6 +74,7 @@ CREATE TABLE IF NOT EXISTS `bd_tcc`.`produtos` (
   `valor` DECIMAL(10,2) NOT NULL,
   `produtoscol` VARCHAR(45) NULL,
   `id_categoria` INT NOT NULL,
+  imagem VARCHAR(255),
   PRIMARY KEY (`id_produto`),
   INDEX `fk_produtos_categorias1_idx` (`id_categoria` ASC),
   CONSTRAINT `fk_produtos_categorias1`
